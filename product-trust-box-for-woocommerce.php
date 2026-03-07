@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: WooCommerce Product Trust Box
+ * Plugin Name: Product Trust Box for WooCommerce
  * Plugin URI:  https://sirpisoftwares.com
  * Description: Adds a configurable trust/USP box on WooCommerce single product pages (delivery date range, free delivery, discounts, secure payment icons).
  * Version:     1.0.0
