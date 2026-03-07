@@ -1,4 +1,4 @@
-# WooCommerce Product Trust Box
+# Product Trust Box for WooCommerce
 
 Adds a customizable **Trust Box** to the WooCommerce single product page.
 
