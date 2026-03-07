@@ -6,7 +6,7 @@
  * Version:     1.0.1
  * Author:      Abdul Majeed
  * License:     GPLv2 or later
- * Text Domain: wc-product-trust-box
+ * Text Domain: product-trust-box-for-woocommerce
  * Requires at least: 6.0
  * Requires PHP: 7.4
  *
