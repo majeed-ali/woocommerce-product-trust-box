@@ -1,0 +1,1 @@
+# woocommerce-product-trust-box
