@@ -42,7 +42,7 @@ final class Plugin {
     }
 
     public function load_textdomain() : void {
-        load_plugin_textdomain( 'wc-product-trust-box', false, dirname( plugin_basename( WCPTB_PLUGIN_FILE ) ) . '/languages' );
+        load_plugin_textdomain( 'product-trust-box-for-woocommerce', false, dirname( plugin_basename( WCPTB_PLUGIN_FILE ) ) . '/languages' );
     }
 
     public function enqueue_frontend_assets() : void {
@@ -77,8 +77,8 @@ final class Plugin {
             true
         );
         wp_localize_script( 'wcptb-admin', 'wcptbAdmin', [
-            'mediaTitle' => __( 'Select or Upload an Icon', 'wc-product-trust-box' ),
-            'mediaButton'=> __( 'Use this icon', 'wc-product-trust-box' ),
+            'mediaTitle' => __( 'Select or Upload an Icon', 'product-trust-box-for-woocommerce' ),
+            'mediaButton'=> __( 'Use this icon', 'product-trust-box-for-woocommerce' ),
         ] );
     }
 }

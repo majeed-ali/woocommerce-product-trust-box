@@ -52,7 +52,7 @@ class Render {
             $from = date_i18n( $format, strtotime( '+' . $min . ' days' ) );
             $to   = date_i18n( $format, strtotime( '+' . $max . ' days' ) );
 
-            $label = ! empty( $s['delivery_label'] ) ? $s['delivery_label'] : __( 'Order now to get delivery between', 'wc-product-trust-box' );
+            $label = ! empty( $s['delivery_label'] ) ? $s['delivery_label'] : __( 'Order now to get delivery between', 'product-trust-box-for-woocommerce' );
 
             $rows[] = [
                 'icon' => 'box',
@@ -62,19 +62,19 @@ class Render {
 
         // Shipping / free delivery
         if ( ! empty( $s['shipping_enabled'] ) ) {
-            $label = ! empty( $s['shipping_label'] ) ? $s['shipping_label'] : __( 'Free delivery', 'wc-product-trust-box' );
+            $label = ! empty( $s['shipping_label'] ) ? $s['shipping_label'] : __( 'Free delivery', 'product-trust-box-for-woocommerce' );
 
             if ( ($s['shipping_mode'] ?? 'no_min') === 'min_required' ) {
                 $amount_raw = (string) ( $s['shipping_min_amount'] ?? '0' );
                 $amount = wc_price( floatval( preg_replace('/[^0-9\.\,]/', '', $amount_raw) ) );
                 $text = sprintf(
                     /* translators: 1: min order amount */
-                    __( '%1$s for orders over %2$s.', 'wc-product-trust-box' ),
+                    __( '%1$s for orders over %2$s.', 'product-trust-box-for-woocommerce' ),
                     esc_html( $label ),
                     wp_kses_post( $amount )
                 );
             } else {
-                $text = esc_html( $label ) . ' ' . esc_html__( 'with no minimum order value.', 'wc-product-trust-box' );
+                $text = esc_html( $label ) . ' ' . esc_html__( 'with no minimum order value.', 'product-trust-box-for-woocommerce' );
             }
 
             $rows[] = [
@@ -85,7 +85,7 @@ class Render {
 
         // Discount
         if ( ! empty( $s['discount_enabled'] ) ) {
-            $label = ! empty( $s['discount_label'] ) ? $s['discount_label'] : __( 'Benefit from the current instant discount', 'wc-product-trust-box' );
+            $label = ! empty( $s['discount_label'] ) ? $s['discount_label'] : __( 'Benefit from the current instant discount', 'product-trust-box-for-woocommerce' );
             $rows[] = [
                 'icon' => 'tag',
                 'html' => esc_html( $label ),
@@ -94,7 +94,7 @@ class Render {
 
         // Secure payment icons
         if ( ! empty( $s['secure_enabled'] ) ) {
-            $label = ! empty( $s['secure_label'] ) ? $s['secure_label'] : __( 'Secure payment', 'wc-product-trust-box' );
+            $label = ! empty( $s['secure_label'] ) ? $s['secure_label'] : __( 'Secure payment', 'product-trust-box-for-woocommerce' );
 
             $icons_html = $this->render_payment_icons( $s );
 
