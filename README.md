@@ -1,4 +1,4 @@
-# Product Trust Box for WooCommerce
+# Sirpi Trust Box for WooCommerce
 
 Adds a customizable **Trust Box** to the WooCommerce single product page.
 
@@ -12,7 +12,7 @@ Adds a customizable **Trust Box** to the WooCommerce single product page.
 
 1. Upload the plugin folder to `/wp-content/plugins/`
 2. Go to **WordPress Admin → Plugins**
-3. Activate **WooCommerce Product Trust Box**
+3. Activate **Sirpi Trust Box for WooCommerce**
 
 ## Usage
 
@@ -20,7 +20,7 @@ Once activated, the trust box will automatically appear on the single product pa
 
 To customize the content go to:
 
-WooCommerce → Product Trust Box (Settings)
+WooCommerce → Sirpi Trust Box (Settings)
 
 ## Requirements
 

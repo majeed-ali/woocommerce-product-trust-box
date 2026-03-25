@@ -1,12 +1,13 @@
 <?php
 /**
- * Plugin Name: Product Trust Box for WooCommerce
+ * Plugin Name: Sirpi Trust Box for WooCommerce
  * Plugin URI:  https://sirpisoftwares.com
  * Description: Adds a configurable trust/USP box on WooCommerce single product pages (delivery date range, free delivery, discounts, secure payment icons).
  * Version:     1.0.2
  * Author:      Abdul Majeed
  * License:     GPLv2 or later
- * Text Domain: product-trust-box-for-woocommerce
+ * Text Domain: sirpi-trust-box-for-woocommerce
+ * Requires Plugins: woocommerce
  * Requires at least: 6.0
  * Requires PHP: 7.4
  *
@@ -22,8 +23,8 @@ define( 'WCPTB_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 
 add_filter('plugin_action_links_' . plugin_basename(__FILE__), 'wcptb_add_settings_link');
 function wcptb_add_settings_link($links) {
-    $settings_url = admin_url('admin.php?page=wcptb');
-    $settings_link = '<a href="' . esc_url($settings_url) . '">' . __('Settings', 'wcptb') . '</a>';
+    $settings_url = admin_url('admin.php?page=sirpi-trust-box-for-woocommerce');
+    $settings_link = '<a href="' . esc_url($settings_url) . '">' . __('Settings', 'sirpi-trust-box-for-woocommerce') . '</a>';
     array_unshift($links, $settings_link);
     return $links;
 }

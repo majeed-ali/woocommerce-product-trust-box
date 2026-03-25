@@ -1,4 +1,4 @@
-=== Product Trust Box for WooCommerce ===
+=== Sirpi Trust Box for WooCommerce ===
 Contributors: abdulmajeedali
 Tags: woocommerce, product page, trust badges, payment icons, shipping, delivery
 Requires at least: 6.0
@@ -21,8 +21,8 @@ Features include:
 == Installation ==
 
 1. Upload the plugin folder to `/wp-content/plugins/` or upload the ZIP via WordPress admin.
-2. Activate **Product Trust Box for WooCommerce**.
-3. Go to **WooCommerce → Product Trust Box** to configure the settings.
+2. Activate **Sirpi Trust Box for WooCommerce**.
+3. Go to **WooCommerce → Sirpi Trust Box** to configure the settings.
 
 == Frequently Asked Questions ==
 
